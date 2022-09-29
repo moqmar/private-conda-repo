@@ -12,7 +12,7 @@ export default () => {
   const validated = user.validated;
 
   return (
-    <Menu mode="horizontal" selectedKeys={[""]}>
+    <Menu mode="horizontal" selectedKeys={[""]} className={styles.userManager}>
       <Menu.Item key="help">
         <Link to="/help">Help</Link>
       </Menu.Item>

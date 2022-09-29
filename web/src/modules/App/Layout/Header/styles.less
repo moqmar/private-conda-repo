@@ -7,10 +7,17 @@
   box-shadow: 0 5px 5px #cecece;
   margin-bottom: @header-margin;
 
+  .userManager {
+    align-self: flex-end;
+  }
+
   .title {
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    width: 24px;
+    flex-grow: 1;
 
     .logo {
       width: 24px;
@@ -21,6 +28,10 @@
       margin-left: 8px;
       font-size: 18px;
       font-weight: 700;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
 
       .non-bold {
         font-weight: normal;
