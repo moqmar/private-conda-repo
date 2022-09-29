@@ -4,7 +4,7 @@ import axios, { AxiosResponse } from "axios";
 
 const url =
   (process.env.REACT_APP_API_URL ??
-    `${window.location.protocol}//${window.location.hostname}:5060`) + "/p";
+    `${window.location.protocol}//${window.location.hostname}:5055`) + "/p";
 
 type Response = {
   buildNumber: number;

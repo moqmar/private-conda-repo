@@ -18,7 +18,7 @@ var setCmd = &cobra.Command{
 	Short: "Sets the package registry",
 	Long: `Verifies the package registry and sets it if successful. The registry needs to be specified
 for the cli to work correctly`,
-	Example: "pcr registry set http://localhost:5060",
+	Example: "pcr registry set http://localhost:5055",
 	Args:    cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		handler := SetHandler{cmd: cmd}

@@ -22,7 +22,7 @@ services:
     image: danielbok/pcr-server:3.0
     ports:
       - "5050:5050"
-      - "5060:5060"
+      - "5055:5055"
     environment: 
       PCR_INDEXER.TYPE: shell
     volumes: 

@@ -4,7 +4,7 @@ PCR Server
 The PCR server is used as an interface to create channels, upload packages and
 provide any meta-data api for downstream users such as the web application.
 
-By default, the application (registry) server runs on port 5060 and the repository runs 
+By default, the application (registry) server runs on port 5055 and the repository runs 
 on port 5050. The application server handles things such as channel creation, meta 
 information api, package upload etc. The web interface and CLI tool mainly touches this
 layer. The repository server is the one that is used whenever you do a `conda install`. 
@@ -25,7 +25,7 @@ Returns meta information about the application
 ```typescript
 type Output = {
   image:      string // name of the image used to index the channels"
-  registry:   string // url of the registry server (usually 5060)
+  registry:   string // url of the registry server (usually 5055)
   repository: string // url of the repository server (usually 5050)
 }
 ``` 

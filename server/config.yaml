@@ -32,7 +32,7 @@ fileserver:
   port: 5050
 
 api:
-  port: 5060
+  port: 5055
 
 # if valid key and cert files are provided, server runs in HTTPS mode automatically
 tls:

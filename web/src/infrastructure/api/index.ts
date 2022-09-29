@@ -12,7 +12,7 @@ import * as ApiTypes from "./types";
 
 const apiUrl = !!process.env.REACT_APP_API_URL
   ? process.env.REACT_APP_API_URL
-  : `${window.location.protocol}//${window.location.hostname}:5060`;
+  : `${window.location.protocol}//${window.location.hostname}:5055`;
 
 export class API {
   private client: AxiosInstance;

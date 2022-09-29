@@ -29,7 +29,7 @@ To get started, you'll need to set your registry. If your registry is running
 at `http://localhost:5050`, then run the following command
 
 ```bash
-pcr registry set http://localhost:5060
+pcr registry set http://localhost:5055
 ``` 
 
 Now that the CLI knows where to communicate, you can either login or create

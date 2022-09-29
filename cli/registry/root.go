@@ -42,7 +42,7 @@ CLI Registry details:
 Use "%s registry --help" for more information.
 
 Registry should be the api server that is used to create and add channel. 
-Usually this is https://<host>:5060. Remember to set it with the "set"
+Usually this is https://<host>:5055. Remember to set it with the "set"
 command. 
 `, registry, channel, strings.Split(cmd.CommandPath(), " ")[0])))
 	},

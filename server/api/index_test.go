@@ -24,7 +24,7 @@ func NewIndexHandler() *IndexHandler {
 			},
 			DB:         nil,
 			FileServer: &config.ServerConfig{Port: 5050},
-			AppServer:  &config.ServerConfig{Port: 5060},
+			AppServer:  &config.ServerConfig{Port: 5055},
 		},
 	}
 }
@@ -61,7 +61,7 @@ func TestIndexHandler_MetaInfo(t *testing.T) {
 	assert.Equal(dto.ApiMetaInfo{
 		Indexer:    "shell",
 		Image:      "",
-		Registry:   formURL(5060),
+		Registry:   formURL(5055),
 		Repository: formURL(5050),
 	}, meta)
 }

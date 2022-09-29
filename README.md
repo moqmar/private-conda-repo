@@ -47,7 +47,7 @@ you can check it out at the
 
 ## Installing Packages
 
-By default, the application server will run at port 5060 and the 
+By default, the application server will run at port 5055 and the 
 repository server will run at port 5050. 
 
 The application server is used to handle things such as user creation, meta information api, package upload etc. So the web interface and the 
