@@ -13,7 +13,7 @@ import styles from "./styles.less";
 
 export default () => {
   const details = useSelector(PkgSelector.packageDetail);
-  const { devUrl, docUrl, home, license, timestamp } = details.latest;
+  const { dev_url, doc_url, home, license, timestamp } = details.latest;
   const downloads = details.details.reduce((acc, e) => acc + e.count, 0);
 
   return (
@@ -34,8 +34,8 @@ export default () => {
 
       {([
         [home, "Home", <HomeOutlined className={styles.icon} />],
-        [devUrl, "Development", <CodeOutlined className={styles.icon} />],
-        [docUrl, "Documentation", <FileWordOutlined className={styles.icon} />],
+        [dev_url, "Development", <CodeOutlined className={styles.icon} />],
+        [doc_url, "Documentation", <FileWordOutlined className={styles.icon} />],
       ] as [string | null, string, JSX.Element][]).map(
         ([link, title, icon]) =>
           link && (

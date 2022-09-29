@@ -25,8 +25,8 @@ export type PackageMetaInfo = {
   platforms: Platform[];
   version: string | null;
   description: string | null;
-  devUrl: string | null;
-  docUrl: string | null;
+  dev_url: string | null;
+  doc_url: string | null;
   home: string | null;
   license: string | null;
   summary: string | null;
