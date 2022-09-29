@@ -37,7 +37,7 @@ export default () => {
               <Col span={18}>
                 <List.Item.Meta
                   title={<Link name={item.name} channel={item.channel} />}
-                  description={item.description}
+                  description={item.description || item.summary || ""}
                 />
               </Col>
               <Col span={6}>
@@ -55,7 +55,7 @@ export default () => {
 
 const Header = () => (
   <Row gutter={12} className={styles.header}>
-    <Col span={18}>Package (owner / package)</Col>
+    <Col span={18}>Channel&nbsp;/&nbsp;Package</Col>
     <Col span={6}>Platforms</Col>
   </Row>
 );
@@ -72,10 +72,10 @@ const useResultList = () => {
       { name: "name", weight: 0.6 },
       { name: "description", weight: 0.25 },
       { name: "channel", weight: 0.1 },
-      { name: "summary", weight: 0.05 },
+      { name: "summary", weight: 0.15 },
     ];
 
-    return new Fuse(packages, { threshold: 0.2, keys })
+    return new Fuse(packages, { threshold: 0.1, ignoreLocation: true, keys })
       .search(search)
       .map((e) => e.item);
   } else {
