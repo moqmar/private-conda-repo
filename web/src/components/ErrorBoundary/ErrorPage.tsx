@@ -14,7 +14,7 @@ const ErrorPage = () => {
 
   return (
     <div className={styles.errorPage}>
-      <img src={NotFound} alt="Page not found" />
+      <span style={{fontSize: "64px"}}>❌</span>
       <h2>The page you're looking for does not exist</h2>
       <Typography.Text>
         Do you have permissions to view this page?
