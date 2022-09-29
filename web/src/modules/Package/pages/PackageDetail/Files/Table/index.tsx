@@ -60,7 +60,7 @@ const useColumns = (): ColumnProps<DataRow>[] => {
       render: (text) => (
         <>
           <CalendarOutlined />
-          {text}
+          &nbsp;{text}
         </>
       ),
     },
