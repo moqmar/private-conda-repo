@@ -20,7 +20,7 @@ const RegistrationForm = () => {
   return (
     <>
       <Typography.Paragraph className={styles.welcome}>
-        New to Private Conda Repo? Register a channel for yourself!
+        New to Private Conda Repository? Register a channel for yourself!
       </Typography.Paragraph>
       <ChannelInput />
       <PasswordInput />

@@ -12,7 +12,7 @@ export default () => {
       <Input
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        placeholder="Search Private Conda Repo"
+        placeholder="Search Packages"
         size="large"
         addonAfter={<SearchOutlined />}
       />
